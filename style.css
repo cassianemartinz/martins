@@ -1,1 +1,167 @@
+/* Variáveis de Cores */
+:root {
+  --cor-primaria: #0056b3; /* Azul escuro - Transmite confiança, estabilidade, profissionalismo */
+  --cor-secundaria: #28a745; /* Verde vibrante - Crescimento, vitalidade, sustentabilidade, dinheiro */
+  --cor-destaque: #ffc107; /* Amarelo/Dourado - Atenção, oportunidade, energia */
+  --cor-neutra-clara: #f8f9fa; /* Cinza muito claro - Fundo limpo, modernidade */
+  --cor-neutra-escura: #343a40; /* Cinza escuro - Textos, contraste */
+  --cor-texto-claro: #ffffff; /* Branco - Para textos em fundos escuros */
+}
 
+/* Estilos Globais */
+body {
+  font-family: 'Roboto', sans-serif; /* Fonte moderna e legível */
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: var(--cor-neutra-clara);
+  color: var(--cor-neutra-escura);
+}
+
+/* Títulos */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif; /* Fonte com mais personalidade para títulos */
+  color: var(--cor-primaria);
+  margin-bottom: 0.5em;
+}
+
+h1 {
+  font-size: 2.8em;
+  color: var(--cor-primaria);
+}
+
+h2 {
+  font-size: 2.2em;
+  color: var(--cor-neutra-escura);
+}
+
+/* Links */
+a {
+  color: var(--cor-primaria);
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+  color: var(--cor-secundaria);
+  text-decoration: underline;
+}
+
+/* Botões */
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-align: center;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.btn-primario {
+  background-color: var(--cor-primaria);
+  color: var(--cor-texto-claro);
+  border: 1px solid var(--cor-primaria);
+}
+
+.btn-primario:hover {
+  background-color: #004085; /* Um tom mais escuro do azul primário */
+  border-color: #004085;
+}
+
+.btn-secundario {
+  background-color: var(--cor-secundaria);
+  color: var(--cor-texto-claro);
+  border: 1px solid var(--cor-secundaria);
+}
+
+.btn-secundario:hover {
+  background-color: #218838; /* Um tom mais escuro do verde secundário */
+  border-color: #218838;
+}
+
+.btn-destaque {
+  background-color: var(--cor-destaque);
+  color: var(--cor-neutra-escura);
+  border: 1px solid var(--cor-destaque);
+}
+
+.btn-destaque:hover {
+  background-color: #e0a800; /* Um tom mais escuro do amarelo de destaque */
+  border-color: #e0a800;
+}
+
+
+/* Layout Básico (Exemplo) */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  background-color: var(--cor-neutra-escura);
+  color: var(--cor-texto-claro);
+  padding: 20px 0;
+  text-align: center;
+}
+
+header h1 {
+  color: var(--cor-texto-claro);
+  margin: 0;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: var(--cor-texto-claro);
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  color: var(--cor-destaque);
+}
+
+.section {
+  background-color: var(--cor-texto-claro);
+  padding: 40px 0;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.section-servicos {
+  background-color: var(--cor-neutra-clara);
+}
+
+.card {
+  background-color: var(--cor-texto-claro);
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.card h3 {
+  color: var(--cor-primaria);
+  margin-top: 0;
+}
+
+footer {
+  background-color: var(--cor-neutra-escura);
+  color: var(--cor-texto-claro);
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 40px;
+}
